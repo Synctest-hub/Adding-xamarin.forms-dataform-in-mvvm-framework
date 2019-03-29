@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d:MvxContentPage x:TypeArguments="viewModels:MvxFormsViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MvxForms.Core.Pages"
+    x:Class="MvxForms.Core.Pages.MvxFormsPage"
+    xmlns:viewModels="clr-namespace:MvxForms.Core.ViewModels;assembly=MvxForms.Core"
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:dataFormBehavior="clr-namespace:MvxForms.Core.ViewModels">
+    <ContentPage.Behaviors>
+        <dataFormBehavior:DataFormBehavior/>
+    </ContentPage.Behaviors>
+    <ContentPage.Content>
+        <Grid>
+            <dataForm:SfDataForm x:Name="dataForm" mvx:Bi.nd="DataObject ContactsInfo">
+            </dataForm:SfDataForm>
+        </Grid>
+    
+  </ContentPage.Content>
+</d:MvxContentPage>
